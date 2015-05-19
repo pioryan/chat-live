@@ -44,6 +44,18 @@ gem 'puma'
 #gem 'thin'
 gem 'redis'
 
+gem "figaro"
+
+
+gem 'aws-sdk', '< 2.0'
+gem "asset_sync"
+gem 'heroku-deflater', :group => :production
+gem "yui-compressor"
+
+gem 'rack-zippy'
+
+gem "rails_12factor"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
