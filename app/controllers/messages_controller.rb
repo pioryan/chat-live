@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
   def create
     response.headers['Content-Type'] = 'text/javascript'
     @message = params.require(:message).permit(:name, :content)
+    Message.create!(@message)
     $redis.publish('messages.create', @message.to_json)
     render nothing: true
   end

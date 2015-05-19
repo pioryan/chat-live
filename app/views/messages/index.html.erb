@@ -1,6 +1,12 @@
 Hello! Welcome to chatzy
 
 <ul id="messages">
+
+  <%- @messages.each do |message| %>
+    <li>
+      <%= "#{message.name}: #{message.content}" %>
+    </li>
+  <%- end %>
 </ul>
 
 <%= form_for Message.new, remote: true do |f| %>
