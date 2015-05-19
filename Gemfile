@@ -56,6 +56,9 @@ gem 'rack-zippy'
 
 gem "rails_12factor"
 
+gem 'newrelic_rpm'
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
