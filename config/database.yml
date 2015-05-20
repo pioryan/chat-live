@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: chat_live_production
-  username: chat_live
-  password: <%= ENV['chat_live_DATABASE_PASSWORD'] %>
+  username: postgres
