@@ -58,7 +58,6 @@ gem "rails_12factor"
 
 gem 'newrelic_rpm'
 
-gem 'capistrano', '~> 3.4.0'
 
 
 # To use ActiveModel has_secure_password
@@ -72,3 +71,10 @@ gem 'capistrano', '~> 3.4.0'
 
 # To use debugger
 # gem 'debugger'
+group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+end
