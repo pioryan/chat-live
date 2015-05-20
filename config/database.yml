@@ -82,3 +82,4 @@ production:
   <<: *default
   database: chat_live_production
   username: chat_live
+  password: <%= ENV['DATABASE_PASSWORD'] %>

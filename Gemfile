@@ -78,4 +78,5 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano-rvm',   '~> 0.1', require: false
   gem 'capistrano-figaro-yml', '~> 1.0.1'
+  gem 'capistrano-postgresql', '~> 4.2.0'
 end
