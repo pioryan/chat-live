@@ -49,7 +49,7 @@ gem "figaro"
 
 gem 'aws-sdk', '< 2.0'
 gem "asset_sync"
-gem 'heroku-deflater', :group => :production
+# gem 'heroku-deflater', :group => :production
 gem "yui-compressor"
 
 gem 'rack-zippy'
