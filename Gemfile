@@ -39,7 +39,7 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'puma'
+gem 'unicorn'
 # gem 'rainbows'
 #gem 'thin'
 gem 'redis'
@@ -73,7 +73,7 @@ gem 'newrelic_rpm'
 # gem 'debugger'
 group :development do
   gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano-puma', require: false
+  gem 'capistrano-unicorn-nginx'
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano-rvm',   '~> 0.1', require: false
