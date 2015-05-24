@@ -25,8 +25,8 @@ require 'capistrano/deploy'
 
 require 'capistrano/rvm'
 require 'capistrano/bundler'
-require 'capistrano/unicorn_nginx'
-require 'capistrano/safe_deploy_to'
+require 'capistrano/puma'
+# require 'capistrano/safe_deploy_to'
 
 require 'capistrano/rails/assets' # for asset handling add
 require 'capistrano/rails/migrations' # for running migrations

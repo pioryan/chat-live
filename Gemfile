@@ -76,8 +76,9 @@ gem 'sass-rails', '>= 3.2'
 
 group :development do
   gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano-unicorn-nginx'
-  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
+  # gem 'capistrano-unicorn-nginx'
+  # gem 'capistrano-safe-deploy-to', '~> 1.1.1'
+  gem 'capistrano3-puma',   require: false
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano-rvm',   '~> 0.1', require: false
