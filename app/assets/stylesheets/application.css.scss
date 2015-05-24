@@ -1,0 +1,10 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "offcanvas";
+@import "bubble";
+
+#conversation {
+  position: relative;
+  max-height: 300px;
+  overflow-y: scroll;
+}

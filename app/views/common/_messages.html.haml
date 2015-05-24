@@ -1,0 +1,5 @@
+.row
+  .col-xs-12.col-sm-12#messages
+    - @messages.each do |message|
+      = render partial: 'common/left', locals: {message: message}
+      = render partial: 'common/right', locals: {message: message}

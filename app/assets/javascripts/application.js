@@ -13,13 +13,19 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require offcanvas
+//= require ie10-viewport-bug-workaround
+
 
 jQuery(document).ready(function() {
   var source = new EventSource('/messages/events'),
       message;
   source.addEventListener('messages.create', function (e) {
     message = JSON.parse(e.data);
-    $("#messages").append($('<li>').text(message.name + ': ' + message.content));
+    //$("#messages").append($('<li>').text(message.name + ': ' + message.content));
+    $("#messages").append($('<div class="col-xs-10 col-sm-10 bubble-right">').text(message.content));
+    $("#messages").append($('<div class="col-xs-2 col-sm-2">').text(message.name));
+
   });
 });

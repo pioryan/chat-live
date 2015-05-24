@@ -8,7 +8,6 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
   gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -58,6 +57,8 @@ gem "rails_12factor"
 
 gem 'newrelic_rpm'
 
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'sass-rails', '>= 3.2'
 
 
 # To use ActiveModel has_secure_password
@@ -71,9 +72,14 @@ gem 'newrelic_rpm'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'haml-rails'
+end
 group :development do
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-unicorn-nginx'
+  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano-rvm',   '~> 0.1', require: false

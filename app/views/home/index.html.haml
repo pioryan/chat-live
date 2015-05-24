@@ -1,0 +1,12 @@
+.panel.panel-default
+  .panel-heading Hi Guest
+  .panel-body#conversation{"data-spy"=>"scroll"}
+    = render partial: 'common/messages'
+
+  .panel-footer
+    .row
+      = form_for Message.new, remote: true do |f|
+        .col-xs-10.col-sm-10
+          = f.text_area :content, class: "form-control"
+        .col-xs-2.col-sm-2.pull-right
+          = f.submit "Send", id: "message_submit", class: "btn btn-lg btn-primary"
