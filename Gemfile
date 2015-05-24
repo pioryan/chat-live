@@ -44,6 +44,7 @@ gem 'unicorn'
 gem 'redis'
 
 gem "figaro"
+gem 'haml-rails'
 
 
 gem 'aws-sdk', '< 2.0'
@@ -73,9 +74,6 @@ gem 'sass-rails', '>= 3.2'
 # To use debugger
 # gem 'debugger'
 
-group :development do
-  gem 'haml-rails'
-end
 group :development do
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-unicorn-nginx'
