@@ -23,7 +23,7 @@ set :log_level, :debug
 set :pty, true
 
 # Default value for :linked_files is []
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 # set :puma_rackup, -> { File.join(current_path, 'config.ru') }
 # set :puma_state, "#{shared_path}/tmp/pids/puma.state"
 # set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
