@@ -1,5 +1,6 @@
 .panel.panel-default
-  .panel-heading Hi Guest
+  .panel-heading
+    = "Hi #{current_or_guest_user.username}"
   .panel-body#conversation{"data-spy"=>"scroll"}
     = render partial: 'common/messages'
 

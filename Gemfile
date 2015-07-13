@@ -61,7 +61,8 @@ gem 'newrelic_rpm'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
 
-
+gem 'devise'
+gem 'devise-guests'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -75,6 +76,7 @@ gem 'sass-rails', '>= 3.2'
 # gem 'debugger'
 
 group :development do
+  gem 'pry'
   gem 'capistrano', '~> 3.4.0'
   # gem 'capistrano-unicorn-nginx'
   # gem 'capistrano-safe-deploy-to', '~> 1.1.1'
